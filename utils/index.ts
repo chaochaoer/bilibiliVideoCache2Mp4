@@ -17,7 +17,10 @@ const bilibiliVideoCache2Mp4Wrap = (entry: string, output: string) => {
   mkdirSync(output)
   const bilibiliVideoCache2Mp4: BilibiliVideoCache2Mp4 = ({ curDirPath, isTarget, outputFileName, dir }) => {
     if (isTarget) {
-      // 使用replaceAll去除空格不然ffmpeg会报错(eg:Unable to find a suitable output format for 'XXX')
+      /* 
+      使用replaceAll去除空格不然ffmpeg会报错(eg:Unable to find a suitable output format for 'XXX')
+      这里需要注意targetPath和outputFileName不应该有特殊的字符比如【 】，不然ffmpeg也会报错(eg:Unable to find a suitable output format for 'XXX')
+      */
       let targetPath = `${output}/${dir}`.replaceAll(' ', '')
       mkdirSync(targetPath)
       outputFileName = outputFileName?.replaceAll(' ', '')
