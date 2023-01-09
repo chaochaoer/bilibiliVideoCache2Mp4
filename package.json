@@ -1,0 +1,27 @@
+{
+  "name": "bilibilivideocache2mp4",
+  "version": "1.0.0",
+  "description": "把b站缓存的视频转换成为mp4",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chaochaoer/bilibiliVideoCache2Mp4.git"
+  },
+  "keywords": [],
+  "author": "chaochao",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chaochaoer/bilibiliVideoCache2Mp4/issues"
+  },
+  "homepage": "https://github.com/chaochaoer/bilibiliVideoCache2Mp4#readme",
+  "dependencies": {
+    "shelljs": "^0.8.5"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "@types/shelljs": "^0.8.11"
+  }
+}
